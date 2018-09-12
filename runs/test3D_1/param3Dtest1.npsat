@@ -4,11 +4,11 @@ subsection A. Workspace directories ============================
   # a----------------------------------
   # The directory with all input data.
   # All input data must be under the same directory.
-  set a Input directory  = 
+  set a Input directory  = /home/giorgk/Documents/UCDAVIS/AMR_paper/amr_paper/runs/test3D_1/
 
   # b----------------------------------
   # The directory where all output data will be saved.
-  set b Output directory = 
+  set b Output directory = /home/giorgk/Documents/UCDAVIS/AMR_paper/amr_paper/runs/test3D_1/output/
 end
 
 
@@ -30,7 +30,7 @@ subsection B. Geometry  ========================================
     # The coordinates of the left lower point of the domain.
     # In case of 2D the 3rd element is ignored but it should be present.
     # This is valid for BOX geometry type
-    set b Left lower point = 0,0,0
+    set b Left lower point = 0,0,-270
   end
 
   subsection B. Case FILE =---=---=---=---=---=---=---=---=---
@@ -45,12 +45,12 @@ subsection B. Geometry  ========================================
     # a----------------------------------
     # Top elevation function must be either a single value
     # or the name of a file
-    set a Top elevation function    = 
+    set a Top elevation function    = 30
 
     # b----------------------------------
     # Bottom elevation function must be either a single value
     # or the name of a file
-    set b Bottom elevation function = 
+    set b Bottom elevation function = -270
 
     # c----------------------------------
     # Threshold value along the horizontal plane
@@ -68,7 +68,7 @@ subsection C. Discretization ===================================
   # a----------------------------------
   # The number of cells along the x, y, z directions, in that order.
   # In case of 2D the 3rd element is ignored but it should be present.
-  set a Nxyz                    = 10,10,3
+  set a Nxyz                    = 10,10,2
 
   # b----------------------------------
   # A list of numbers between 0 and 1 that correspond
@@ -103,7 +103,7 @@ subsection E Aquifer Properties ================================
   # a----------------------------------
   # Hydraulic conductivity along the x direction.
   # It must be either a single value or the name of a file
-  set a Hydraulic Conductivity KX = 
+  set a Hydraulic Conductivity KX = 20
 
   # b----------------------------------
   # Hydraulic conductivity along the y direction.
@@ -115,12 +115,12 @@ subsection E Aquifer Properties ================================
   # Hydraulic conductivity along the z direction.
   # It must be either a single value or the name of a file
   # If KZ == KX leave this empty. In 2D this corresponds to the vertical K
-  set c Hydraulic Conductivity KZ = 
+  set c Hydraulic Conductivity KZ = 20
 
   # d----------------------------------
   # Porosity. This is used during particle tracking
   # A single value or the name of the file
-  set d Porosity                  = 
+  set d Porosity                  = 0.1
 end
 
 
@@ -128,7 +128,7 @@ subsection F. Sources & Sinks ==================================
   # a----------------------------------
   # Groundwater recharche function
   # must be either a single value or the name of a file
-  set a Groundwater recharge = 
+  set a Groundwater recharge = 0.0004
 
   # b----------------------------------
   # Stream network
@@ -227,7 +227,7 @@ subsection I. Particle tracking ================================
 
   # j----------------------------------
   # Set to 0 to deactivate particle tracking. Default is 1
-  set j Do particle tracking       = 1
+  set j Do particle tracking       = 0
 
   # k----------------------------------
   # The maximum number of particles that is allowed to run in parallel
@@ -252,7 +252,7 @@ subsection J. Output Parameters ================================
   # a----------------------------------
   # Prefix is a keyword that is used when printing the various
   # output files
-  set a Prefix         = 
+  set a Prefix         = test3D1
 
   # b----------------------------------
   # This should be roughly equal to the maximum dimension

@@ -11,4 +11,5 @@
 !/runs/test3D_1
 /runs/test3D_1/*
 !/runs/test3D_1/*.npsat
+!/runs/test3D_1/*.m
 
