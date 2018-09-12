@@ -1,0 +1,42 @@
+\begin{tikzpicture}[baseline=-20,scale=2,font=\LARGE]
+
+	%\useasboundingbox(-5.5,-3.2);
+
+	\draw[step=0.5cm] (-4,-4) grid (0,-1);
+
+	%\draw[]( 1,-4)--(5,-4);
+
+	\draw[dashed,  draw=blue!40, very thick](-4,-1) .. controls (-3,0.7) and (-1,-2.5) .. (0,-1);
+
+	\draw[](1,-1) .. controls (2,0.7) and (4,-2.5) .. (5,-1);
+	\draw[](1,-1.5) .. controls (2,-0.0833) and (4,-2.75) .. (5,-1.5);
+	\draw[](1,-2) .. controls (2,-0.8667) and (4,-3.0) .. (5,-2);
+	\draw[](1,-2.5) .. controls (2,-1.65) and (4,-3.25) .. (5,-2.5);
+	\draw[](1,-3) .. controls (2,-2.433) and (4,-3.5) .. (5,-3);
+	\draw[](1,-3.5) .. controls (2,-3.2167) and (4,-3.75) .. (5,-3.5);
+	\draw[](1,-4) .. controls (2,-4) and (4,-4) .. (5,-4);
+
+	\draw[](1,-4) -- (1,-1);
+	\draw[](1.5,-4) -- (1.5,-0.544);
+	\draw[](2,-4) -- (2, -0.504);
+	\draw[](2.5,-4) -- (2.5, -0.674);
+	\draw[](3,-4) -- (3,-0.93);
+	\draw[](3.5,-4) -- (3.5,-1.18);
+	\draw[](4,-4) -- (4,-1.37);
+	\draw[](4.5,-4) -- (4.5,-1.39);
+	\draw[](5,-4) -- (5,-1);
+
+
+	%\draw[step=.5cm] (0,-4) grid (3,-2);
+	%\draw[step=1cm] (0,-2) grid (1,-1);
+	%\draw[step=0.5cm] (1,-2) grid (3,-1);
+
+	%\draw[step=.25cm](0.5,-4) grid (1,-3.5);
+	%\draw[step=.25cm](1,-3.5) grid (1.5,-2.5);
+    	%\draw[step=.25cm](1.5,-3) grid (2,-1.5);
+    %	\draw[step=.25cm](2,-2) grid (2.5,-1.5);
+    %	\draw[step=.25cm](2.5,-1.5) grid (3,-1);
+
+	%\draw [->,very thick](-0.9,-2.5)--(-0.1,-2.5);
+					
+\end{tikzpicture}

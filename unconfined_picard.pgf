@@ -1,0 +1,33 @@
+\begin{tikzpicture}[baseline = -20, scale=3, font=\LARGE]
+    \def\Xa{-1.0}; %Left X 
+   \def\Xb{7.0}; % Right X
+   \def\Bot{-3}; %Base
+   \def\HL{-1}; % left boundary
+   \def\HR{0};
+   \def\w{0.5};
+	%\filldraw[fill=blue!40, draw=blue!40](-1,-1)--(-1.5,-1)--(-1.5,-3)--(-1,-3);
+   \filldraw[fill=blue!40, draw=blue!40](\Xa,\Bot)--(\Xa,\HL)--(\Xa-\w,\HL)--(\Xa-\w, \Bot);
+   \filldraw[fill=blue!40, draw=blue!40](\Xb,\Bot)--(\Xb,\HR)--(\Xb+\w,\HR)--(\Xb+\w,\Bot);
+	%\filldraw[fill=blue!40, draw=blue!40](7,0)--(7,-3)--(7.5,-3)--(7.5,0);
+
+	\filldraw[fill=brown!50, draw=brown!50] (7,-3)--(7,0) .. controls (4.5,2) and (-0.5,2) ..(-1,-1)--(-1,-3);
+
+	\draw[dashed,fill=blue!40, draw=blue!40, very thick](-1,-1)--(7,0);
+	\draw(-0.2,-1.1) node{$H^0$};
+
+	\draw[dashed,  draw=blue!40, very thick](-1,-1) .. controls (1,1) and (3,2) .. (7,0);
+	\draw(1.3,0.9) node{$H^1$};
+
+	\draw[dashed, draw=blue!40, very thick](-1,-1).. controls (3,1) and (3.5,1.) ..  (7,0);
+	\draw(4.2,0.5) node{$H^2$};
+
+	\draw[,dashed,thin,|-|,draw=black!60](-0.5,-3)--(-0.5,-0.93);
+	\draw(-0.30,-2) node{$K^0$};
+
+	\draw[,dashed,thin,|-|,draw=black!60](1.5,-3)--(1.5,0.8);
+	\draw(1.7,-2) node{$K^1$};
+
+	\draw[,dashed,thin,|-|,draw=black!60](4.5,-3)--(4.5,0.6);
+	\draw(4.7,-2) node{$K^2$};
+
+\end{tikzpicture}

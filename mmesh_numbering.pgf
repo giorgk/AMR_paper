@@ -1,0 +1,51 @@
+\usetikzlibrary{calc}
+
+\begin{tikzpicture}[baseline = -10, scale=1.6, font=\LARGE]
+
+\tikzstyle{style_black90} = [solid, line width=2pt, cap=round, draw=black!90];
+
+\coordinate (bl) at (0,-9);
+\coordinate (bc) at (1,-9);
+\coordinate (br) at (2,-9);
+\coordinate (tl) at (0,3);
+\coordinate (tc) at (1,3);
+\coordinate (tr) at (2,3);
+
+\draw[style_black90] (bl)--(br)--(tr)--(tl)--(bl);
+
+% major horizontal lines
+\foreach \x / \y in {0.167 / 0.833, 0.33 / 0.67, 0.5 / 0.5, 0.67 / 0.33, 0.83 /0.167} 
+	\draw[style_black90]($\x*(tl)+\y*(bl)$)--($\x*(tr)+\y*(br)$);
+
+\foreach \x / \y in {0.25 / 0.75, 0.416 / 0.583, 0.9167 / 0.0833, 0.75 /  0.25} 
+	\draw[style_black90]($\x*(tl)+\y*(bl)$)--($\x*(tr)+\y*(br)$);
+
+\draw[style_black90](tc)--($0.67*(tc) + 0.33*(bc)$);
+\draw[style_black90]($0.5*(tc) + 0.5*(bc)$)--($0.167*(tc) + 0.83*(bc)$);
+
+%node labels
+\draw (tc) node[above left]{1};
+\draw ($0.9167*(tc)+0.0833*(bc)$) node[above left]{2};
+\draw ($0.833*(tc)+0.167*(bc)$) node[above left]{3};
+\draw ($0.75*(tc)+0.25*(bc)$) node[above left]{4};
+\draw ($0.67*(tc)+0.33*(bc)$) node[above left]{5};
+\draw ($0.5*(tc)+0.5*(bc)$) node[above left]{6};
+\draw ($0.4167*(tc)+0.5833*(bc)$) node[above left]{7};
+\draw ($0.33*(tc)+0.67*(bc)$) node[above left]{8};
+\draw ($0.25*(tc)+0.75*(bc)$) node[above left]{9};
+\draw ($0.167*(tc)+0.833*(bc)$) node[above left]{10};
+
+\draw ($(tc)+(1.5,0)$) node[right]{1: $Z_{top} = 1, Z_{bot} = 5 $ };
+\draw ($0.9167*(tc)+0.0833*(bc)+(1.5,0)$) node[right]{2: $Z_{top} = 1, Z_{bot} = 5 $};
+\draw ($0.833*(tc)+0.167*(bc)+(1.5,0)$) node[right]{3: $Z_{top} = 1, Z_{bot} = 5 $};
+\draw ($0.75*(tc)+0.25*(bc)+(1.5,0)$) node[right]{4: $Z_{top} = 1, Z_{bot} = 5 $};
+\draw ($0.67*(tc)+0.33*(bc)+(1.5,0)$) node[right]{5: $Z_{top} = 1, Z_{bot} = 5 $};
+\draw ($0.5*(tc)+0.5*(bc)+(1.5,0)$) node[right]{6: $Z_{top} = 6, Z_{bot} = 10 $};
+\draw ($0.4167*(tc)+0.5833*(bc)+(1.5,0)$) node[right]{7: $Z_{top} = 6, Z_{bot} = 10 $};
+\draw ($0.33*(tc)+0.67*(bc)+(1.5,0)$) node[right]{8: $Z_{top} = 6, Z_{bot} = 10 $};
+\draw ($0.25*(tc)+0.75*(bc)+(1.5,0)$) node[right]{9: $Z_{top} = 6, Z_{bot} = 10 $};
+\draw ($0.167*(tc)+0.833*(bc)+(1.5,0)$) node[right]{10: $Z_{top} = 6, Z_{bot} = 10 $};
+
+
+
+\end{tikzpicture}

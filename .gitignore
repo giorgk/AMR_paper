@@ -1,3 +1,14 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
 # Ignore everything
 /*
+!*.pgf
+!*.png
+!*.pov
+!*.xcf
+!*.npsat
+!/runs
+/runs/*
+!/runs/test3D_1
+/runs/test3D_1/*
+!/runs/test3D_1/*.npsat
+
