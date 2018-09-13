@@ -8,11 +8,12 @@ dom = [0 0; L 0; L L; 0 L];
 %% Create BC file
 bx = 1500;
 by = 1500;
-w = 257;
+w = 57;
+%%
 fid = fopen('test3D_BC.npsat','w');
 fprintf(fid, '%d\n', 1);
 fprintf(fid, 'TOP 4 %f\n', 35);
-fprintf(fid,'%f %f\n',[bx-w by-w; bx+w by-w; bx+w by+w; bx-w by+w]);
+fprintf(fid,'%f %f\n',[bx-w by-w; bx+w by-w; bx+w by+w; bx-w by+w]');
 fclose(fid);
 %% load stream from the NPSAT tutorial
 strm = shaperead([msim_path '/html_help/DATA/Streams_exampl_buff']);
@@ -24,13 +25,14 @@ strm(17,1).Y(strm(17,1).Y < 0) = 0;
 strm = strm(14:18,:);
 for ii = 1:size(strm,1)
     strm(ii,1).area = polyarea(strm(ii,1).X(1:end-1), strm(ii,1).Y(1:end-1));
+    strm(ii,1).Q_rate = 1*strm(ii,1).Q_rate;
 end
 %% write the stream file
 fid = fopen('test3D_stream.npsat','w');
 fprintf(fid, '%d\n', size(strm,1));
 for ii = 1:size(strm,1)
     fprintf(fid, '%d %f\n', [4 strm(ii,1).Q_rate]);
-    fprintf(fid, '%f %f\n', [strm(1,1).X(1:4)' strm(1,1).Y(1:4)']');
+    fprintf(fid, '%f %f\n', [strm(ii,1).X(1:4)' strm(ii,1).Y(1:4)']');
 end
 fclose(fid);
 %% Calculate the total volume of water that comes in the aquifer
@@ -38,7 +40,7 @@ rch = 0.0004;
 % Therefore, the total recharge volume is
 RCV_vol = rch*L*L;
 STRM_vol = sum([strm.Q_rate]'.*[strm.area]');
-Tot_rch = RCV_vol + STRM_vol;
+Tot_rch = RCV_vol + STRM_vol
 %
 %% Generate wells
 % make a list of the stream segments to calculate faster the distances
@@ -103,3 +105,43 @@ fid = fopen('test3D_wells.npsat','w');
 fprintf(fid, '%d\n', size(wells,1));
 fprintf(fid, '%f %f %f %f %f\n', wells');
 fclose(fid);
+%% plot for debuging
+clf
+hold on
+dx = 0:500:5000;
+for ii = 1:length(dx)-1
+    for jj = 1:length(dx)-1
+        plot([dx(ii) dx(ii+1) dx(ii+1) dx(ii) dx(ii)],...
+             [dx(jj) dx(jj) dx(jj+1) dx(jj+1) dx(jj)],'b');
+    end
+end
+for ii = 1:size(strm,1)
+    plot(strm(ii,1).X([1:4 1]), strm(ii,1).Y([1:4 1]),'r')
+end
+axis equal
+%% Paper plot
+wells = readWells('test3D_wells.npsat');
+strm = readStreams('test3D_stream.npsat');
+clf
+hold on
+dx = 0:500:5000;
+for ii = 1:length(dx)-1
+    for jj = 1:length(dx)-1
+        plot([dx(ii) dx(ii+1) dx(ii+1) dx(ii) dx(ii)],...
+             [dx(jj) dx(jj) dx(jj+1) dx(jj+1) dx(jj)],'--k');
+    end
+end
+plot(dom([1 2 3 4 1], 1), dom([1 2 3 4 1], 2), 'linewidth', 2, 'color', [0    0.4470    0.7410])
+
+for ii = 1:size(strm,1)
+    patch(strm(ii,1).poly(:,1), strm(ii,1).poly(:,2),[0.9290    0.6940    0.1250])
+    text(mean(strm(ii,1).poly(:,1))+100, mean(strm(ii,1).poly(:,2)), num2str(strm(ii,1).Q), 'color', [0.4392 0.3216 0.0549]); 
+end
+plot(wells(:,1), wells(:,2),'o','color',[0.8500    0.3250    0.0980],'MarkerFaceColor',[0.8500    0.3250    0.0980])
+axis equal
+for ii = 1:size(wells,1)
+    text(wells(ii,1)+50, wells(ii,2)+50, num2str(wells(ii,5),'%.0f'),'color',[0.4471 0.1686 0.051]);
+end
+bc = [bx-w by-w; bx+w by-w; bx+w by+w; bx-w by+w];
+patch(bc(:,1), bc(:,2), [0.3010    0.7450    0.9330])
+axis off
