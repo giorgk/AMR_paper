@@ -95,7 +95,7 @@ subsection D. Boundary Conditions ==============================
   # a----------------------------------
   # The name file of multiple files separated by ;
   # with the constant head boundary conditions
-  set a Dirichlet file name = 
+  set a Dirichlet file name = test3D_BC.npsat
 end
 
 
@@ -133,12 +133,12 @@ subsection F. Sources & Sinks ==================================
   # b----------------------------------
   # Stream network
   # The name of a file that defines the streams and the rates
-  set b Stream recharge      = 
+  set b Stream recharge      = test3D_stream.npsat
 
   # c----------------------------------
   # Well network
   # The name of a file with the well information
-  set c Wells                = 
+  set c Wells                = test3D_wells.npsat
 end
 
 
