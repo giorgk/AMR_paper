@@ -6,6 +6,7 @@
 !*.pov
 !*.xcf
 !*.npsat
+!*.pvsm
 !/runs
 /runs/*
 !/runs/test3D_1
