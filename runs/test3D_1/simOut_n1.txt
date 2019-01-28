@@ -1,0 +1,362 @@
+Simulation started at 
+Mon Jan 28 01:10:37 2019 PST
+Distribute mesh dofs...726
+Update Mesh structure...
+Max time spent: 0.02177 sec on Updating XYZ
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+|----------- Iteration : 0 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 242
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9600]
+	 Solving system...
+   Solved in 1 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...1449
+Update Mesh structure...
+Max time spent: 0.014724 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |    0.0496s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |  0.000701s |       1.4% |
+| output                          |         1 |   0.00169s |       3.4% |
+| setup                           |         1 |    0.0109s |        22% |
+| solve                           |         1 |   0.00297s |         6% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 1 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 483
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9600]
+	 Solving system...
+   Solved in 1 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...2673
+Update Mesh structure...
+Max time spent: 0.020027 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |     0.064s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |   0.00136s |       2.1% |
+| output                          |         1 |   0.00279s |       4.4% |
+| setup                           |         1 |    0.0112s |        17% |
+| solve                           |         1 |   0.00259s |         4% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 2 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 891
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9900]
+	 Solving system...
+   Solved in 1 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...6420
+Update Mesh structure...
+Max time spent: 0.037198 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |     0.106s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |   0.00262s |       2.5% |
+| output                          |         1 |   0.00654s |       6.2% |
+| setup                           |         1 |    0.0118s |        11% |
+| solve                           |         1 |   0.00432s |       4.1% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 3 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 2140
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9937.5]
+	 Solving system...
+   Solved in 17 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...14256
+Update Mesh structure...
+Max time spent: 0.078907 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |     0.214s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |   0.00659s |       3.1% |
+| output                          |         1 |    0.0186s |       8.7% |
+| setup                           |         1 |    0.0165s |       7.7% |
+| solve                           |         1 |   0.00994s |       4.6% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 4 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 4752
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9956.25]
+	 Solving system...
+   Solved in 19 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...33294
+Update Mesh structure...
+Max time spent: 0.195823 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |      0.48s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |    0.0159s |       3.3% |
+| output                          |         1 |    0.0447s |       9.3% |
+| setup                           |         1 |    0.0256s |       5.3% |
+| solve                           |         1 |    0.0196s |       4.1% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 5 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 11098
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9984.37]
+	 Solving system...
+   Solved in 20 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...74127
+Update Mesh structure...
+Max time spent: 0.465309 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |      1.11s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |     0.039s |       3.5% |
+| output                          |         1 |     0.114s |        10% |
+| setup                           |         1 |    0.0474s |       4.3% |
+| solve                           |         1 |    0.0444s |         4% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 6 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 24709
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9993.75]
+	 Solving system...
+   Solved in 21 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...161916
+Update Mesh structure...
+Max time spent: 1.20977 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |      2.66s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |    0.0885s |       3.3% |
+| output                          |         1 |     0.264s |       9.9% |
+| setup                           |         1 |     0.097s |       3.7% |
+| solve                           |         1 |    0.0982s |       3.7% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 7 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 53972
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9993.75]
+	 Solving system...
+   Solved in 21 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...341457
+Update Mesh structure...
+Max time spent: 3.35376 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |       6.6s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |     0.202s |       3.1% |
+| output                          |         1 |     0.594s |         9% |
+| setup                           |         1 |     0.209s |       3.2% |
+| solve                           |         1 |     0.249s |       3.8% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 8 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 113819
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9993.75]
+	 Solving system...
+   Solved in 22 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...715281
+Update Mesh structure...
+Max time spent: 11.0306 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |        18s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |     0.435s |       2.4% |
+| output                          |         1 |      1.33s |       7.4% |
+| setup                           |         1 |     0.461s |       2.6% |
+| solve                           |         1 |     0.553s |       3.1% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 9 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 238427
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9994.13]
+	 Solving system...
+   Solved in 26 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...1476759
+Update Mesh structure...
+Max time spent: 40.4838 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |      55.6s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |     0.959s |       1.7% |
+| output                          |         1 |      2.91s |       5.2% |
+| setup                           |         1 |      1.01s |       1.8% |
+| solve                           |         1 |       1.4s |       2.5% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 10 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 492253
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9994.51]
+	 Solving system...
+   Solved in 26 iterations.
+	 Printing results...
+Create 2D grids...
+Distribute mesh dofs...3034251
+Update Mesh structure...
+Max time spent: 171.673 sec on Updating XYZ
+Compute global top/bottom elevations...
+Update Mesh elevation...
+	 Points not set:  0 after 0 iter
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |       203s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |      1.96s |      0.96% |
+| output                          |         1 |      6.26s |       3.1% |
+| setup                           |         1 |      2.03s |         1% |
+| solve                           |         1 |      3.01s |       1.5% |
++---------------------------------+-----------+------------+------------+
+
+|----------- Iteration : 11 -------------|
+	Setting up system...
+	 Number of degrees of freedom: 1011417
+	 QWELLS: [-11843.9]
+	 Q_streams = 1205.78 and AREA = 337279
+	 Assembling system...
+	 QRCH: [9994.53]
+	 Solving system...
+   Solved in 26 iterations.
+	 Printing results...
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |      29.1s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| assemble                        |         1 |      4.07s |        14% |
+| output                          |         1 |      13.2s |        45% |
+| setup                           |         1 |      4.23s |        15% |
+| solve                           |         1 |      6.44s |        22% |
++---------------------------------+-----------+------------+------------+
+
+Simulation ended at 
+Mon Jan 28 01:15:55 2019 PST

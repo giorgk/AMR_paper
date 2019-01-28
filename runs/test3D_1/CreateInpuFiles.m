@@ -145,3 +145,69 @@ end
 bc = [bx-w by-w; bx+w by-w; bx+w by+w; bx-w by+w];
 patch(bc(:,1), bc(:,2), [0.3010    0.7450    0.9330])
 axis off
+
+%% Create output statistics plot
+load('MultiCoreStats');
+iter = 1:12;
+%%
+clf
+yyaxis left
+semilogy(iter, sum(Stats.n1,2),'-ob')
+hold on
+semilogy(iter, sum(Stats.n3,2),'-og')
+semilogy(iter, sum(Stats.n6,2),'-or')
+ylabel('Time [sec]')
+
+yyaxis right
+semilogy(iter, Stats.dof,'.-')
+ylim([0 1000000])
+legend('# proc: 1', '# proc: 3', '# proc: 6', 'dofs', 'location', 'Northwest')
+ylabel('Degrees of freedom')
+xlabel('Iterations')
+title('Simulation time')
+xlim([1 12])
+%%
+clf
+subplot(2,2,1);
+semilogy(iter, Stats.n1(:,1), '.-b', 'DisplayName', '# proc: 1')
+hold on
+semilogy(iter, Stats.n3(:,1), '.-g', 'DisplayName', '# proc: 3')
+semilogy(iter, Stats.n6(:,1), '.-r', 'DisplayName', '# proc: 6')
+ylabel('Time [sec]')
+title('Assemble');
+grid on
+ylim([0.0001 20])
+xlim([1 12])
+
+subplot(2,2,2);
+semilogy(iter, Stats.n1(:,2), '.-b', 'DisplayName', '# proc: 1')
+hold on
+semilogy(iter, Stats.n3(:,2), '.-g', 'DisplayName', '# proc: 3')
+semilogy(iter, Stats.n6(:,2), '.-r', 'DisplayName', '# proc: 6')
+title('Output');
+grid on
+ylim([0.0001 20])
+xlim([1 12])
+
+subplot(2,2,3);
+semilogy(iter, Stats.n1(:,3), '.-b', 'DisplayName', '# proc: 1')
+hold on
+semilogy(iter, Stats.n3(:,3), '.-g', 'DisplayName', '# proc: 3')
+semilogy(iter, Stats.n6(:,3), '.-r', 'DisplayName', '# proc: 6')
+ylabel('Time [sec]')
+xlabel('Iterations')
+title('Setup');
+grid on
+ylim([0.0001 20])
+xlim([1 12])
+
+subplot(2,2,4);
+semilogy(iter, Stats.n1(:,4), '.-b', 'DisplayName', '# proc: 1')
+hold on
+semilogy(iter, Stats.n3(:,4), '.-g', 'DisplayName', '# proc: 3')
+semilogy(iter, Stats.n6(:,4), '.-r', 'DisplayName', '# proc: 6')
+xlabel('Iterations')
+title('Solve');
+grid on
+ylim([0.0001 20])
+xlim([1 12])
