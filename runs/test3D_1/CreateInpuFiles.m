@@ -40,7 +40,7 @@ rch = 0.0004;
 % Therefore, the total recharge volume is
 RCV_vol = rch*L*L;
 STRM_vol = sum([strm.Q_rate]'.*[strm.area]');
-Tot_rch = RCV_vol + STRM_vol
+Tot_rch = RCV_vol + STRM_vol;
 %
 %% Generate wells
 % make a list of the stream segments to calculate faster the distances
