@@ -17,4 +17,11 @@
 !/runs/test3D_1/*.sh
 !/runs/test3D_1/*.txt
 !/runs/test3D_1/*.mat
+!/runs/testValid/
+/runs/testValid/*
+!/runs/testValid/*.m
+!/runs/testValid/*.OBJ
+!/runs/testValid/*.geo
+!/runs/testValid/*.msh
+
 
