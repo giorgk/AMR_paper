@@ -21,7 +21,10 @@
 /runs/testValid/*
 !/runs/testValid/*.m
 !/runs/testValid/*.OBJ
+!/runs/testValid/*.obj
 !/runs/testValid/*.geo
 !/runs/testValid/*.msh
+!/runs/testValid/*.npsat
+!/runs/testValid/*.hipnc
 
 
