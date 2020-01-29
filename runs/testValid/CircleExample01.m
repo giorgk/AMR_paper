@@ -39,7 +39,7 @@ circle_dom.runGmsh('circle_domain',gmsh_path,[])
 
 % circle_dom.showGmsh('circle_domain',gmsh_path, 'msh');
 
-Nel = size(MSH(3,1).elem.id,1);
+Nel = size(MSH(3,1).elem.id,1);R*(pi*Radius^2)
 Np = size(p,1);
 
 R = 5e-4;

@@ -95,7 +95,7 @@ subsection D. Boundary Conditions ==============================
   # a----------------------------------
   # The name file of multiple files separated by ;
   # with the constant head boundary conditions
-  set a Dirichlet file name = 
+  set a Dirichlet file name = dir_bc_circle.npsat
 end
 
 
@@ -103,7 +103,7 @@ subsection E Aquifer Properties ================================
   # a----------------------------------
   # Hydraulic conductivity along the x direction.
   # It must be either a single value or the name of a file
-  set a Hydraulic Conductivity KX = 
+  set a Hydraulic Conductivity KX = 5
 
   # b----------------------------------
   # Hydraulic conductivity along the y direction.
@@ -120,7 +120,7 @@ subsection E Aquifer Properties ================================
   # d----------------------------------
   # Porosity. This is used during particle tracking
   # A single value or the name of the file
-  set d Porosity                  = 
+  set d Porosity                  = 0.1
 end
 
 
@@ -128,7 +128,7 @@ subsection F. Sources & Sinks ==================================
   # a----------------------------------
   # Groundwater recharche function
   # must be either a single value or the name of a file
-  set a Groundwater recharge = 
+  set a Groundwater recharge = 0
 
   # b----------------------------------
   # Stream network
@@ -138,7 +138,7 @@ subsection F. Sources & Sinks ==================================
   # c----------------------------------
   # Well network
   # The name of a file with the well information
-  set c Wells                = 
+  set c Wells                = circle_well.npsat
 end
 
 
@@ -146,7 +146,7 @@ subsection G. Solver parameters ================================
   # a----------------------------------
   # Number of nonlinear iterations for solving the unconfined problem
   # The refinement will occur during the N Max refinements iterations.
-  set a Nonlinear iterations = 10
+  set a Nonlinear iterations = 5
 
   # b----------------------------------
   # Tolerance of solver
@@ -165,17 +165,17 @@ end
 subsection H. Refinement Parameters ============================
   # a----------------------------------
   # Number of maximum refinement cycles during a simulation
-  set a Max refinements iterations = 5
+  set a Max refinements iterations = 6
 
   # b----------------------------------
   # Top refinement fraction
   # This defines the percentage of cells to be refined
-  set b Top fraction               = 0.15
+  set b Top fraction               = 0.20
 
   # c----------------------------------
   # Bottom refinement fraction
   # This defines the percentage of cells to be coarsen
-  set c Bottom fraction            = 0.01
+  set c Bottom fraction            = 0.001
 
   # d----------------------------------
   # Minimum element size. Cells with lower diameter
@@ -188,7 +188,7 @@ end
 subsection I. Particle tracking ================================
   # a----------------------------------
   # Set to 0 to deactivate particle tracking. Default is 1
-  set a Enable particle tracking = 1
+  set a Enable particle tracking = 0
 
 
   subsection A. Configuration =---=---=---=---=---=---=---=---=
@@ -285,7 +285,7 @@ subsection J. Output Parameters ================================
   # a----------------------------------
   # Prefix is a keyword that is used when printing the various
   # output files
-  set a Prefix = 
+  set a Prefix = circleTest20_
 
 
   subsection A. Load/Save options =---=---=---=---=---=---=
@@ -314,7 +314,7 @@ subsection J. Output Parameters ================================
     # b----------------------------------
     # Prints the coordinates of the free surface vertices.
     # The file name is Prefix + top + iter + proc.xyz
-    set b Print free surface point cloud = 0
+    set b Print free surface point cloud = 1
 
     # c----------------------------------
     # This should be roughly equal to the maximum dimension
